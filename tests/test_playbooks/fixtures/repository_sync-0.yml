@@ -1,0 +1,416 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json;version=2
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - apypie (https://github.com/Apipie/apypie)
+    method: GET
+    uri: https://foreman.example.org/api/status
+  response:
+    body:
+      string: '{"result":"ok","status":200,"version":"3.3.1","api_version":2}'
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - Keep-Alive
+      Content-Security-Policy:
+      - 'default-src ''self''; child-src ''self''; connect-src ''self'' ws: wss:;
+        img-src ''self'' data:; script-src ''unsafe-eval'' ''unsafe-inline'' ''self'';
+        style-src ''unsafe-inline'' ''self'''
+      Content-Type:
+      - application/json; charset=utf-8
+      Foreman_api_version:
+      - '2'
+      Foreman_current_location:
+      - ; ANY
+      Foreman_current_organization:
+      - ; ANY
+      Foreman_version:
+      - 3.3.1
+      Keep-Alive:
+      - timeout=15, max=100
+      Strict-Transport-Security:
+      - max-age=631139040; includeSubdomains
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json;version=2
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - apypie (https://github.com/Apipie/apypie)
+    method: GET
+    uri: https://foreman.example.org/katello/api/organizations?search=name%3D%22Test+Organization%22&per_page=4294967296
+  response:
+    body:
+      string: "{\n  \"total\": 4,\n  \"subtotal\": 1,\n  \"page\": 1,\n  \"per_page\":
+        4294967296,\n  \"search\": \"name=\\\"Test Organization\\\"\",\n  \"sort\":
+        {\n    \"by\": null,\n    \"order\": null\n  },\n  \"results\": [{\"label\":\"Test_Organization\",\"created_at\":\"2022-12-01
+        11:09:13 UTC\",\"updated_at\":\"2022-12-01 11:09:15 UTC\",\"id\":11,\"name\":\"Test
+        Organization\",\"title\":\"Test Organization\",\"description\":\"A test organization\"}]\n}\n"
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - Keep-Alive
+      Content-Security-Policy:
+      - 'default-src ''self''; child-src ''self''; connect-src ''self'' ws: wss:;
+        img-src ''self'' data:; script-src ''unsafe-eval'' ''unsafe-inline'' ''self'';
+        style-src ''unsafe-inline'' ''self'''
+      Content-Type:
+      - application/json; charset=utf-8
+      Foreman_api_version:
+      - '2'
+      Foreman_current_location:
+      - ; ANY
+      Foreman_current_organization:
+      - ; ANY
+      Foreman_version:
+      - 3.3.1
+      Keep-Alive:
+      - timeout=15, max=99
+      Strict-Transport-Security:
+      - max-age=631139040; includeSubdomains
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json;version=2
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - apypie (https://github.com/Apipie/apypie)
+    method: GET
+    uri: https://foreman.example.org/katello/api/organizations/11/products?search=name%3D%22Test+Product%22&per_page=4294967296
+  response:
+    body:
+      string: '{"total":1,"subtotal":1,"selectable":1,"page":1,"per_page":"4294967296","error":null,"search":"name=\"Test
+        Product\"","sort":{"by":"name","order":"asc"},"results":[{"id":350,"cp_id":"855888476759","name":"Test
+        Product","label":"Test_Product","description":"A happy little test product","provider_id":17,"sync_plan_id":null,"sync_summary":{},"gpg_key_id":null,"ssl_ca_cert_id":null,"ssl_client_cert_id":null,"ssl_client_key_id":null,"sync_state":null,"last_sync":"2022-12-01
+        11:09:18 UTC","last_sync_words":"less than a minute","organization_id":11,"organization":{"name":"Test
+        Organization","label":"Test_Organization","id":11},"sync_plan":null,"repository_count":1}]}
+
+        '
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - Keep-Alive
+      Content-Security-Policy:
+      - 'default-src ''self''; child-src ''self''; connect-src ''self'' ws: wss:;
+        img-src ''self'' data:; script-src ''unsafe-eval'' ''unsafe-inline'' ''self'';
+        style-src ''unsafe-inline'' ''self'''
+      Content-Type:
+      - application/json; charset=utf-8
+      Foreman_api_version:
+      - '2'
+      Foreman_current_location:
+      - ; ANY
+      Foreman_current_organization:
+      - 11; Test Organization
+      Foreman_version:
+      - 3.3.1
+      Keep-Alive:
+      - timeout=15, max=98
+      Strict-Transport-Security:
+      - max-age=631139040; includeSubdomains
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{}'
+    headers:
+      Accept:
+      - application/json;version=2
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - apypie (https://github.com/Apipie/apypie)
+    method: POST
+    uri: https://foreman.example.org/katello/api/products/350/sync
+  response:
+    body:
+      string: '  {"id":"bc8851c1-e8ac-44a9-99cd-1942b5b4caa0","label":"Actions::BulkAction","pending":true,"action":"Bulk
+        action","username":"admin","started_at":"2022-12-01 11:09:19 UTC","ended_at":null,"state":"planned","result":"pending","progress":0.0,"input":{"action_class":"Actions::Katello::Repository::Sync","target_ids":[230],"target_class":"Katello::Repository","args":[],"current_request_id":"f32a9d0e-54d9-4b0c-8f96-119a708bccd6","current_timezone":"UTC","current_organization_id":null,"current_location_id":null,"current_user_id":4},"output":{},"humanized":{"action":"Bulk
+        action","input":null,"output":null,"errors":[]},"cli_example":null,"start_at":"2022-12-01
+        11:09:19 UTC","available_actions":{"cancellable":false,"resumable":false}}
+
+        '
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - Keep-Alive
+      Content-Security-Policy:
+      - 'default-src ''self''; child-src ''self''; connect-src ''self'' ws: wss:;
+        img-src ''self'' data:; script-src ''unsafe-eval'' ''unsafe-inline'' ''self'';
+        style-src ''unsafe-inline'' ''self'''
+      Content-Type:
+      - application/json; charset=utf-8
+      Foreman_api_version:
+      - '2'
+      Foreman_current_location:
+      - ; ANY
+      Foreman_current_organization:
+      - ; ANY
+      Foreman_version:
+      - 3.3.1
+      Keep-Alive:
+      - timeout=15, max=97
+      Strict-Transport-Security:
+      - max-age=631139040; includeSubdomains
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json;version=2
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - apypie (https://github.com/Apipie/apypie)
+    method: GET
+    uri: https://foreman.example.org/foreman_tasks/api/tasks/bc8851c1-e8ac-44a9-99cd-1942b5b4caa0
+  response:
+    body:
+      string: '{"id":"bc8851c1-e8ac-44a9-99cd-1942b5b4caa0","label":"Actions::BulkAction","pending":true,"action":"Bulk
+        action","username":"admin","started_at":"2022-12-01 11:09:19 UTC","ended_at":null,"duration":"00:00:04.091467","state":"running","result":"pending","progress":0.0,"input":{"action_class":"Actions::Katello::Repository::Sync","target_ids":[230],"target_class":"Katello::Repository","args":[],"current_request_id":"f32a9d0e-54d9-4b0c-8f96-119a708bccd6","current_timezone":"UTC","current_organization_id":null,"current_location_id":null,"current_user_id":4},"output":{"planned_count":1,"cancelled_count":0,"total_count":1,"failed_count":0,"pending_count":1,"success_count":0},"humanized":{"action":"Synchronize","input":["synchronize",["repository",{"text":"repository
+        ''Test Repository''","link":null}],["product",{"text":"product ''Test Product''","link":"/products/350/"}],["organization",{"text":"organization
+        ''Test Organization''","link":"/organizations/11/edit"}],"..."],"output":"1
+        task(s), 0 success, 0 fail","errors":[]},"cli_example":null,"start_at":"2022-12-01
+        11:09:19 UTC","available_actions":{"cancellable":true,"resumable":false}}'
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - Keep-Alive
+      Content-Security-Policy:
+      - 'default-src ''self''; child-src ''self''; connect-src ''self'' ws: wss:;
+        img-src ''self'' data:; script-src ''unsafe-eval'' ''unsafe-inline'' ''self'';
+        style-src ''unsafe-inline'' ''self'''
+      Content-Type:
+      - application/json; charset=utf-8
+      Foreman_api_version:
+      - '2'
+      Foreman_current_location:
+      - ; ANY
+      Foreman_current_organization:
+      - ; ANY
+      Foreman_version:
+      - 3.3.1
+      Keep-Alive:
+      - timeout=15, max=96
+      Strict-Transport-Security:
+      - max-age=631139040; includeSubdomains
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json;version=2
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - apypie (https://github.com/Apipie/apypie)
+    method: GET
+    uri: https://foreman.example.org/foreman_tasks/api/tasks/bc8851c1-e8ac-44a9-99cd-1942b5b4caa0
+  response:
+    body:
+      string: '{"id":"bc8851c1-e8ac-44a9-99cd-1942b5b4caa0","label":"Actions::BulkAction","pending":true,"action":"Bulk
+        action","username":"admin","started_at":"2022-12-01 11:09:19 UTC","ended_at":null,"duration":"00:00:08.143863","state":"running","result":"pending","progress":0.0,"input":{"action_class":"Actions::Katello::Repository::Sync","target_ids":[230],"target_class":"Katello::Repository","args":[],"current_request_id":"f32a9d0e-54d9-4b0c-8f96-119a708bccd6","current_timezone":"UTC","current_organization_id":null,"current_location_id":null,"current_user_id":4},"output":{"planned_count":1,"cancelled_count":0,"total_count":1,"failed_count":0,"pending_count":1,"success_count":0},"humanized":{"action":"Synchronize","input":["synchronize",["repository",{"text":"repository
+        ''Test Repository''","link":null}],["product",{"text":"product ''Test Product''","link":"/products/350/"}],["organization",{"text":"organization
+        ''Test Organization''","link":"/organizations/11/edit"}],"..."],"output":"1
+        task(s), 0 success, 0 fail","errors":[]},"cli_example":null,"start_at":"2022-12-01
+        11:09:19 UTC","available_actions":{"cancellable":true,"resumable":false}}'
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - Keep-Alive
+      Content-Security-Policy:
+      - 'default-src ''self''; child-src ''self''; connect-src ''self'' ws: wss:;
+        img-src ''self'' data:; script-src ''unsafe-eval'' ''unsafe-inline'' ''self'';
+        style-src ''unsafe-inline'' ''self'''
+      Content-Type:
+      - application/json; charset=utf-8
+      Foreman_api_version:
+      - '2'
+      Foreman_current_location:
+      - ; ANY
+      Foreman_current_organization:
+      - ; ANY
+      Foreman_version:
+      - 3.3.1
+      Keep-Alive:
+      - timeout=15, max=95
+      Strict-Transport-Security:
+      - max-age=631139040; includeSubdomains
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json;version=2
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - apypie (https://github.com/Apipie/apypie)
+    method: GET
+    uri: https://foreman.example.org/foreman_tasks/api/tasks/bc8851c1-e8ac-44a9-99cd-1942b5b4caa0
+  response:
+    body:
+      string: '{"id":"bc8851c1-e8ac-44a9-99cd-1942b5b4caa0","label":"Actions::BulkAction","pending":false,"action":"Synchronize
+        synchronize; repository ''Test Repository''; product ''Test Product''; organization
+        ''Test Organization''; ...","username":"admin","started_at":"2022-12-01 11:09:19
+        UTC","ended_at":"2022-12-01 11:09:30 UTC","duration":"00:00:10.963837","state":"stopped","result":"success","progress":1.0,"input":{"action_class":"Actions::Katello::Repository::Sync","target_ids":[230],"target_class":"Katello::Repository","args":[],"current_request_id":"f32a9d0e-54d9-4b0c-8f96-119a708bccd6","current_timezone":"UTC","current_organization_id":null,"current_location_id":null,"current_user_id":4},"output":{"planned_count":1,"cancelled_count":0,"total_count":1,"failed_count":0,"pending_count":0,"success_count":1},"humanized":{"action":"Synchronize","input":["synchronize",["repository",{"text":"repository
+        ''Test Repository''","link":null}],["product",{"text":"product ''Test Product''","link":"/products/350/"}],["organization",{"text":"organization
+        ''Test Organization''","link":"/organizations/11/edit"}],"..."],"output":"1
+        task(s), 1 success, 0 fail","errors":[]},"cli_example":null,"start_at":"2022-12-01
+        11:09:19 UTC","available_actions":{"cancellable":false,"resumable":false}}'
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Connection:
+      - Keep-Alive
+      Content-Security-Policy:
+      - 'default-src ''self''; child-src ''self''; connect-src ''self'' ws: wss:;
+        img-src ''self'' data:; script-src ''unsafe-eval'' ''unsafe-inline'' ''self'';
+        style-src ''unsafe-inline'' ''self'''
+      Content-Type:
+      - application/json; charset=utf-8
+      Foreman_api_version:
+      - '2'
+      Foreman_current_location:
+      - ; ANY
+      Foreman_current_organization:
+      - ; ANY
+      Foreman_version:
+      - 3.3.1
+      Keep-Alive:
+      - timeout=15, max=94
+      Strict-Transport-Security:
+      - max-age=631139040; includeSubdomains
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - sameorigin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1
